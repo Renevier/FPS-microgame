@@ -59,6 +59,9 @@ namespace Unity.FPS.Game
             }
 
             HandleDeath();
+
+            if(CurrentHealth <= 0f) 
+                Destroy(gameObject);
         }
 
         public void Kill()
